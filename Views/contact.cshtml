@@ -1,14 +1,14 @@
 @{
-  Layout="Shared/_Layout.cshtml";
+Layout="Shared/_Layout.cshtml";
 }
 <div class="container">
 <div class="jumbotron">
 <h1>Contact Details</h1>
 </div>
-<h1>@Model.GetName()</h1>
+<h1 class="details">@Model.GetName()</h1>
 <ul>
-  <li>@Model.GetAddress()</li>
-  <li>@Model.GetPhoneNumber()</li>
+<li>@Model.GetAddress()</li>
+<li>@Model.GetPhoneNumber()</li>
 </ul>
 
 <h3><a href='/contacts/new'>Add Another contact</a></h3>

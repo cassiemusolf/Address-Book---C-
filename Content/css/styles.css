@@ -13,6 +13,14 @@ body {
   background-position: bottom;
   background-size: contain;
   color: white;
+  margin-bottom: 50px;
+}
+a:hover {
+  color: orange;
+}
+
+.details {
+  font-size: 40px;
 }
 
 .form-group {
@@ -28,6 +36,11 @@ input {
   padding: 5px;
 }
 
-.btn {
-  margin-top: 20px;
+.btn-lg {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 30px;
 }
