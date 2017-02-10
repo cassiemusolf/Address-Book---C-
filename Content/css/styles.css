@@ -2,3 +2,26 @@
   margin: 50px;
   font-family: monospace;
 }
+
+.jumbotron {
+  background-image: url(http://i.stack.imgur.com/aaFv2.png);
+  background-position: bottom;
+  background-size: contain;
+  color: white;
+}
+
+.form-group {
+  margin-top: 30px;
+}
+
+ul {
+  font-size: 20px;
+}
+
+input {
+  padding: 5px;
+}
+
+.btn {
+  margin-top: 20px;
+}
