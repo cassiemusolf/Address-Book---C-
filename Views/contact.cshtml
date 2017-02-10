@@ -1,16 +1,18 @@
 @{
 Layout="Shared/_Layout.cshtml";
 }
-<div class="container">
-<div class="jumbotron">
-<h1>Contact Details</h1>
-</div>
-<h1 class="details">@Model.GetName()</h1>
-<ul>
-<li>@Model.GetAddress()</li>
-<li>@Model.GetPhoneNumber()</li>
-</ul>
 
-<h3><a href='/contacts/new'>Add Another contact</a></h3>
-<h3><a href='/contacts'>View All Contacts</a></h3>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Contact Details</h1>
+  </div>
+
+  <h1 class="details">@Model.GetName()</h1>
+  <ul>
+    <li>@Model.GetAddress()</li>
+    <li>@Model.GetPhoneNumber()</li>
+  </ul>
+
+  <h3><a href='/contacts/new'>Add Another contact</a></h3>
+  <h3><a href='/contacts'>View All Contacts</a></h3>
 </div>
