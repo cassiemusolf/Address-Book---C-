@@ -1,11 +1,17 @@
 <h3>Here are the details of your contact:</h3>
-<ol>
+<ul>
   @foreach (var contact in Model)
   {
-    <li>@contact.GetName()</li>
-    <li>@contact.GetAddress()</li>
-    <li>@contact.GetPhoneNumber()</li>
+    <li><strong>@contact.GetName()</strong></li>
+    <p>@contact.GetAddress()</p>
+    <p>@contact.GetPhoneNumber()</p>
   }
+</ul>
 <a href='/contacts/new'>Add Another Contact</a>
 <a href='/contacts'>View All Contacts</a>
 <p><a href='/'>Return to the main page</a></p>
+
+
+<form action="/contacts/clear" method="post">
+<button type='submit' name='clear'>Clear All Contacts</button>
+</form>

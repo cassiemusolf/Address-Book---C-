@@ -13,7 +13,7 @@ namespace AddressBook
       };
       Get["/contacts"] = _ => {
         List<Contact> allContacts = Contact.GetAll();
-        return View["contacts.cshtml", allContacts];
+        return View["index.cshtml", allContacts];
       };
       Get["/contacts/new"] = _ => {
         return View["contact_form.cshtml"];
