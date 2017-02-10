@@ -1,11 +1,8 @@
-<h3>Here are the details of your contact:</h3>
+<h1>Contact List</h1>
 <ul>
   @foreach (var contact in Model)
   {
-    <li><strong>@contact.GetName()</strong></li>
-    <p>@contact.GetAddress()</p>
-    <p>@contact.GetPhoneNumber()</p>
+    <li><a href='/contacts/@contact.GetId()'>@contact.GetName()</a></li>
+    
   }
 </ul>
-
-<p><a href='/'>Return to the main page</a></p>
