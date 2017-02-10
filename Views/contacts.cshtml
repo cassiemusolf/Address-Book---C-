@@ -1,10 +1,11 @@
-<h1>Address Book</h1>
-@if (@Model.Count == 0)
-{
-  <h3>No contacts have been added yet!</h3>
-}
-@foreach (var contact in Model)
+<h3>Here are the details of your contact:</h3>
+<ol>
+  @foreach (var contact in Model)
   {
-  <h3><a href='/contacts/@contact.GetId()'>@contact.GetName()</a><h3i>
+    <li>@contact.GetName()</li>
+    <li>@contact.GetAddress()</li>
+    <li>@contact.GetPhoneNumber()</li>
   }
-  <p><a href='/'>Go Back Home</a></p>
+<a href='/contacts/new'>Add Another Contact</a>
+<a href='/contacts'>View All Contacts</a>
+<p><a href='/'>Return to the main page</a></p>

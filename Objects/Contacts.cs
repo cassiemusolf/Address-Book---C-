@@ -23,6 +23,10 @@ namespace AddressBook.Objects
     {
       return _contactName;
     }
+    public void SetName(string newName)
+    {
+      _contactName = newName;
+    }
     public int GetId()
     {
       return _id;
@@ -31,15 +35,27 @@ namespace AddressBook.Objects
     {
       return _contactAddress;
     }
+    public void SetAddress(string newAddress)
+    {
+      _contactAddress = newAddress;
+    }
     public string GetPhoneNumber()
     {
       return _contactPhoneNumber;
+    }
+    public void SetPhoneNumber(string newPhoneNumber)
+    {
+      _contactPhoneNumber = newPhoneNumber;
     }
     public static List<Contact> GetAll()
     {
       return _instances;
     }
-    public static void Clear()
+    public void Save()
+    {
+      _instances.Add(this);
+    }
+    public static void ClearAll()
     {
       _instances.Clear();
     }

@@ -26,7 +26,7 @@ namespace AddressBook
       Post["/contacts/clear"] = _ => {
       Contact.ClearAll();
       return View["contacts_cleared.cshtml"];
-    };
+      };
     }
   }
 }
