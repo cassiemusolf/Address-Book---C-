@@ -1,7 +1,7 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
-
+<div class="container">
 <h1>Address Book</h1>
 <h3>Add a new contact:</h3>
 <form action='/contacts' method='post'>
@@ -11,5 +11,7 @@
   <input id='contact-address' name='contact-address' type='text'>
   <label for='contact-phone'>Contact Phone Number</label>
   <input id='contact-phone' name='contact-phone' type='text'>
-  <button type='submit' name='add'>Add a Contact</button>
+  <button type='submit' class="btn btn-primary" name='add'>Add a Contact</button>
 </form>
+<h3><a href='/'>Return to the main page</a></h3>
+</div>
