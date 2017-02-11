@@ -1,11 +1,11 @@
 body {
-    background-color: white;
-    border: solid black thin;
+    background-color: #e8ecf2;
+    border-bottom: dashed black thick;
 }
 
 .container {
   margin: 50px;
-  font-family: monospace;
+  font-family: 'Armata', sans-serif;
 }
 
 .jumbotron {
@@ -44,4 +44,8 @@ input {
 
 h3 {
   margin-top: 30px;
+}
+
+h2 {
+  margin-bottom: 30px;
 }
